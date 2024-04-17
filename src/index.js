@@ -100,12 +100,13 @@ export default class Quote {
    * @public
    * @returns {{left: string, center: string}}
    */
-  static get ALIGNMENTS() {
-    return {
-      left: 'left',
-      center: 'center',
-    };
-  }
+  /*　機能しないため削除　*/
+  // static get ALIGNMENTS() {
+  //   return {
+  //     left: 'left',
+  //     center: 'center',
+  //   };
+  // }
 
   /**
    * Default quote alignment
@@ -113,9 +114,10 @@ export default class Quote {
    * @public
    * @returns {string}
    */
-  static get DEFAULT_ALIGNMENT() {
-    return Quote.ALIGNMENTS.left;
-  }
+  /*　機能しないため削除　*/
+  // static get DEFAULT_ALIGNMENT() {
+  //   return Quote.ALIGNMENTS.left;
+  // }
 
   /**
    * Allow Quote to be converted to/from other blocks
@@ -158,18 +160,18 @@ export default class Quote {
    *
    * @returns {*[]}
    */
-  get settings() {
-    return [
-      {
-        name: 'left',
-        icon: IconAlignLeft,
-      },
-      {
-        name: 'center',
-        icon: IconAlignCenter,
-      },
-    ];
-  }
+  // get settings() {
+  //   return [
+  //     {
+  //       name: 'left',
+  //       icon: IconAlignLeft,
+  //     },
+  //     {
+  //       name: 'center',
+  //       icon: IconAlignCenter,
+  //     },
+  //   ];
+  // }
 
   /**
    * Render plugin`s main Element and fill it with saved data
@@ -262,17 +264,18 @@ export default class Quote {
    * @returns {TunesMenuConfig}
    *
    */
-  renderSettings() {
-    const capitalize = str => str[0].toUpperCase() + str.substr(1);
+  /*　機能しないため削除　*/
+  // renderSettings() {
+  //   const capitalize = str => str[0].toUpperCase() + str.substr(1);
 
-    return this.settings.map(item => ({
-      icon: item.icon,
-      label: this.api.i18n.t(`Align ${capitalize(item.name)}`),
-      onActivate: () => this._toggleTune(item.name),
-      isActive: this.data.alignment === item.name,
-      closeOnActivate: true,
-    }));
-  };
+  //   return this.settings.map(item => ({
+  //     icon: item.icon,
+  //     label: this.api.i18n.t(`Align ${capitalize(item.name)}`),
+  //     onActivate: () => this._toggleTune(item.name),
+  //     isActive: this.data.alignment === item.name,
+  //     closeOnActivate: true,
+  //   }));
+  // };
 
   /**
    * Toggle quote`s alignment
@@ -280,9 +283,10 @@ export default class Quote {
    * @param {string} tune - alignment
    * @private
    */
-  _toggleTune(tune) {
-    this.data.alignment = tune;
-  }
+  /*　機能しないため削除　*/
+  // _toggleTune(tune) {
+  //   this.data.alignment = tune;
+  // }
 
   /**
    * Helper for making Elements with attributes
