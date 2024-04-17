@@ -31,9 +31,9 @@ export type QuoteData = {
  * @property {'center'|'left'} defaultAlignment - alignment to use as default
  */
 export type QuoteConfig = {
-  quotePlaceholder: string
-  captionPlaceholder: string
-  defaultAlignment: 'center'|'left'
+  quotePlaceholder?: string
+  captionPlaceholder?: string
+  defaultAlignment?: 'center'|'left'
 }
 
 /*
@@ -44,7 +44,7 @@ export type QuoteConfig = {
  * @property {boolean} closeOnActivate - if true tunes menu should close once any item is selected
  * @property {() => void} onActivate - item activation callback
  */
-/*　機能しないため削除　*/
+/* 機能しないため削除 */
 // export type TunesMenuConfig = {
 //   icon: string
 //   label: string
