@@ -100,13 +100,12 @@ export default class Quote {
    * @public
    * @returns {{left: string, center: string}}
    */
-  /*　機能しないため削除　*/
-  // static get ALIGNMENTS() {
-  //   return {
-  //     left: 'left',
-  //     center: 'center',
-  //   };
-  // }
+  static get ALIGNMENTS() {
+    return {
+      left: 'left',
+      center: 'center',
+    };
+  }
 
   /**
    * Default quote alignment
@@ -114,10 +113,9 @@ export default class Quote {
    * @public
    * @returns {string}
    */
-  /*　機能しないため削除　*/
-  // static get DEFAULT_ALIGNMENT() {
-  //   return Quote.ALIGNMENTS.left;
-  // }
+  static get DEFAULT_ALIGNMENT() {
+    return Quote.ALIGNMENTS.left;
+  }
 
   /**
    * Allow Quote to be converted to/from other blocks
@@ -160,18 +158,18 @@ export default class Quote {
    *
    * @returns {*[]}
    */
-  // get settings() {
-  //   return [
-  //     {
-  //       name: 'left',
-  //       icon: IconAlignLeft,
-  //     },
-  //     {
-  //       name: 'center',
-  //       icon: IconAlignCenter,
-  //     },
-  //   ];
-  // }
+  get settings() {
+    return [
+      {
+        name: 'left',
+        icon: IconAlignLeft,
+      },
+      {
+        name: 'center',
+        icon: IconAlignCenter,
+      },
+    ];
+  }
 
   /**
    * Render plugin`s main Element and fill it with saved data
@@ -283,10 +281,9 @@ export default class Quote {
    * @param {string} tune - alignment
    * @private
    */
-  /*　機能しないため削除　*/
-  // _toggleTune(tune) {
-  //   this.data.alignment = tune;
-  // }
+  _toggleTune(tune) {
+    this.data.alignment = tune;
+  }
 
   /**
    * Helper for making Elements with attributes
